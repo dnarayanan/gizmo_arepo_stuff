@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name=physprop_halo0_mll11
+#SBATCH --output=physprop.o
+#SBATCH --error=physprop.e
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=desika.narayanan@gmail.com
+#SBATCH --time=96:00:00
+#SBATCH --tasks-per-node=1
+#SBATCH --nodes=1
+#SBATCH --mem-per-cpu=38000
+#SBATCH --account=narayanan
+#SBATCH --qos=narayanan
+#SBATCH --partition=bigmem
+
+module purge
+module load intel/2016.0.109
+module load openmpi/1.10.2
+module load gsl/1.16
+module load hdf5/1.8.16
+module load fftw/2.1.5
+DATADIR=$SLURM_SUBMIT_DIR
+cd $DATADIR
+cat inputfiles/physprop_halo0_ml11_input.py caesar_galaxies_properties_write.py | python

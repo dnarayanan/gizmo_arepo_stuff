@@ -1,0 +1,9 @@
+caesarfile = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/dm2/m50n512/output/caesar_snapshot_135.hdf5'
+#caesarfile = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/m50n512/fh_qr/caesar_snap_m50n512_135.hdf5'
+icfile = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/dm2/ICs/ics_m50n512'
+#icfile = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/ICs/ics_m50n512_z249'
+snapshot = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/dm2/m50n512/output/snapshot_135.hdf5'
+#snapshot = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/m50n512/fh_qr/snap_m50n512_135.hdf5'
+halonum = 2000
+#outfile = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/dm2/halo_masks/z2/music_halo_410.txt'
+outfile = '/ufrc/narayanan/desika.narayanan/gizmo_runs/mufasa/dm2/halo_masks/z0/music_halo_2000.txt'
