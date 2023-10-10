@@ -175,8 +175,8 @@ for gal in range(num_galaxies):
     re_out = h5py.File(outfile,"a")
     
     re_out['Header'].attrs.modify('NumFilesPerSnapshot', 1)
-    re_out['Header'].attrs.modify('NumPart_ThisFile', np.array([gas_len, 0, 0, 0, star_len, 0]))
-    re_out['Header'].attrs.modify('NumPart_Total', np.array([gas_len, 0, 0, 0, star_len, 0]))
+    re_out['Header'].attrs.modify('NumPart_ThisFile', np.array([gas_len, 0, 0, dust_len, star_len, 0]))
+    re_out['Header'].attrs.modify('NumPart_Total', np.array([gas_len, 0, 0, dust_len, star_len, 0]))
     
     re_out.close()
 
